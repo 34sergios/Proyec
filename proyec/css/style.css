@@ -1,0 +1,713 @@
+/* General */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #02070e, #010408);
+    color: #333;
+  }
+    
+
+/* Header */
+#main-header {
+    background-color: #000511; /* negro */
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+}
+
+#main-header h1 {
+    font-size: 4em;
+    font-family: 'Georgia', serif;
+    margin: 0;
+}
+/* Encabezado principal */
+#main-header h1 {
+    color: white;
+    font-size: 4rem; /* Tamaño más grande para destacar el título */
+    font-weight: bold; /* Mantiene el texto llamativo */
+    text-align: center;
+    margin: 0;
+}
+
+/* Eslogan */
+#main-header #eslogan {
+    color: #bfca29;
+    font-size: 2rem; /* impacto visual */
+    font-style: italic; /* toque estilizado */
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+/* Enlaces del menú de navegación */
+#main-nav a {
+    color: white;
+    font-size: 1.5rem; 
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    transition: color 0.3s ease, background-color 0.3s ease; /* Efecto suave */
+}
+
+#main-nav a:hover {
+    color: #00ff6a70; /* Efecto visual al pasar el cursor */
+    background-color: #f36161d0; /* Fondo sutil en hover */
+}
+
+
+#eslogan {
+    font-size: 1.5em;
+    font-weight: lighter;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+/* Navigation */
+#main-nav {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(6, 95, 58); /* Azul Marino */
+    padding: 10px 0;
+}
+#main-nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+#main-nav a:hover {
+    text-decoration: underline;
+}
+
+/* Banner */
+#banner img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Recuadro Interactivo */
+.recuadro-interactivo {
+    background-color: hsl(317, 43%, 38%); 
+    color: white;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 10px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.recuadro-interactivo:hover {
+    background-color: #0e51bb;
+    transform: scale(1.05);
+}
+
+.recuadro-interactivo img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Experiencias */
+.experiencia {
+    display: inline-block;
+    width: 30%;
+    margin: 10px;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.experiencia img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.experiencia h3 {
+    color: #1e3a8a; 
+}
+
+.experiencia:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #1e3a8a; /* Azul Marino */
+    color: white;
+    padding: 10px 0;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+/* Centrar los recuadros */
+.experiencias-contenedor {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: flex-start; /* Alinea verticalmente al inicio */
+    flex-wrap: wrap; /* Permite que los recuadros se ajusten si no caben */
+    gap: 20px; /* Espaciado entre recuadros */
+    margin: 20px auto; /* Centra el contenedor completo */
+    max-width: 1200px; /* Tamaño máximo del contenedor */
+}
+
+/* Estilos para las tarjetas de experiencias */
+.experiencia {
+    background-color: rgba(233, 240, 243, 0.8); /* Fondo translúcido */
+    color: white;
+    width: 300px; /* Tamaño uniforme para las tarjetas */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center; /* Centra el contenido de la tarjeta */
+    transition: transform 0.3s ease-in-out; /* Animación */
+}
+
+/* Tamaño uniforme para imágenes */
+.experiencia img {
+    width: 100%; /* Ocupa el ancho completo del contenedor */
+    height: 200px; /* Altura fija */
+    object-fit: cover; /* Recorta y ajusta la imagen al contenedor */
+    border-radius: 5px;
+}
+
+/* Estilo del botón "Descubre más" */
+.descubre-mas {
+    margin-top: 10px;
+    background-color: #00b4d8; /* Azul claro */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Efectos al interactuar con el botón */
+.descubre-mas:hover {
+    background-color: #0077a3; /* Oscurece al pasar el cursor */
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+}
+
+/* Efecto hover en las tarjetas */
+.experiencia:hover {
+    transform: translateY(-5px); /* Eleva la tarjeta al pasar el cursor */
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+}
+/* ---- Compra tus Entradas ---- */
+#compra-entradas {
+    text-align: center;
+    margin: 10px 0;
+}
+
+#compra-entradas h2 {
+    font-size: 2.5rem;
+    color: #013a63; /* Azul profundo */
+}
+
+marquee {
+    background-color: #5db7d3; /* Azul claro */
+    color: #ffffff; /* Blanco */
+    font-size: 1.2rem;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+    font-family: Arial, sans-serif;
+}
+
+/* ---- Sobre Nosotros ---- */
+#sobre-nosotros {
+    text-align: center;
+    margin: 30px auto;
+    padding: 20px;
+    background: linear-gradient(to bottom, #4ea8de, #014f86); /* Degradado azul marino */
+    border-radius: 10px;
+    color: #ffffff; /* Blanco */
+    max-width: 800px;
+}
+
+#sobre-nosotros h2 {
+    font-size: 2.5rem;
+    color: #ffffff; /* Blanco */
+    font-family: 'Georgia', serif; /* Letra elegante */
+}
+
+#sobre-nosotros p {
+    font-size: 1rem;
+    line-height: 1.6;
+    font-family: Arial, sans-serif;
+}
+
+/* Centrado del video */
+.video-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/* ---- contactos ---- */
+#contactos {
+    text-align: center;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #01070a; /* Azul vibrante */
+    color: #ffffff; /* Blanco */
+    border-radius: 10px;
+    max-width: 800px;
+}
+
+#contactos h2 {
+    font-size: 2.5rem;
+    color: #ffffff; /* Blanco */
+    font-family: 'Georgia', serif; /* Letra elegante */
+}
+
+#contactos p {
+    font-size: 1rem;
+    line-height: 1.8;
+    font-family: Arial, sans-serif;
+}
+
+/* ---- Redes Sociales ---- */
+#redes-sociales {
+    text-align: center;
+    margin: 30px auto;
+    color: #ffffff; /* Blanco */
+}
+
+#redes-sociales h2 {
+    font-size: 2.5rem;
+    color: #862b01; /* Azul oscuro */
+    font-family: 'Georgia', serif; /* Letra elegante */
+}
+
+.iconos-redes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.iconos-redes a img {
+    width: 100px;
+    height: 100px;
+    transition: transform 0.3s ease;
+}
+
+.iconos-redes a img:hover {
+    transform: scale(1.2);
+}
+/* ---- Compra tus Entradas ---- */
+#compra-entradas {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#compra-entradas h2 {
+    font-size: 2.5rem;
+    color: #013a63; /* Azul profundo */
+}
+
+marquee {
+    background-color: #5db7d3; /* Azul claro */
+    color: #ffffff; /* Blanco */
+    font-size: 1.2rem;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+    font-family: Arial, sans-serif;
+}
+
+/* ---- Sobre Nosotros ---- */
+#sobre-nosotros {
+    text-align: center;
+    margin: 30px auto;
+    padding: 20px;
+    background: linear-gradient(to bottom, #4ea8de, #014f86); /* Degradado azul marino */
+    border-radius: 10px;
+    color: #ffffff; /* Blanco */
+    max-width: 800px;
+}
+
+#sobre-nosotros h2 {
+    font-size: 2.5rem;
+    color: #ffffff; /* Blanco */
+    font-family: 'Georgia', serif; /* Letra elegante */
+}
+
+#sobre-nosotros p {
+    font-size: 1rem;
+    line-height: 1.6;
+    font-family: Arial, sans-serif;
+}
+
+/* Centrado del video */
+.video-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* ---- Términos y Condiciones ---- */
+#terminos-condiciones {
+    text-align: center;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #1e81b0; /* Azul vibrante */
+    color: #ffffff; /* Blanco */
+    border-radius: 10px;
+    max-width: 800px;
+}
+
+#terminos-condiciones h2 {
+    font-size: 2.5rem;
+    color: #ffffff; /* Blanco */
+    font-family: 'Georgia', serif; /* Letra elegante */
+}
+
+#terminos-condiciones p {
+    font-size: 1rem;
+    line-height: 1.8;
+    font-family: Arial, sans-serif;
+}
+
+/* ---- Redes Sociales ---- */
+#redes-sociales {
+    text-align: center;
+    margin: 30px auto;
+    color: #ffffff; /* Blanco */
+}
+
+#redes-sociales h2 {
+    font-size: 2.5rem;
+    color: #014f86; /* Azul oscuro */
+    font-family: 'Georgia', serif; /* Letra elegante */
+}
+
+.iconos-redes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.iconos-redes a img {
+    width: 100px;
+    height: 100px;
+    transition: transform 0.3s ease;
+}
+
+.iconos-redes a img:hover {
+    transform: scale(1.2);
+}
+#mapa {
+    text-align: center;
+    margin: 50px 0;
+}
+
+#mapa h2 {
+    font-size: 2rem;
+    color: #0d47a1;
+}
+
+#mapa p {
+    font-size: 1.2rem;
+    color: #5f9ea0;
+}
+/* Asegura que las partículas ocupen todo el fondo */
+#particles-js {
+    position: fixed;  /* Hace que el fondo sea fijo */
+    width: 100%;      /* El contenedor ocupa todo el ancho de la pantalla */
+    height: 100%;     /* El contenedor ocupa todo el alto de la pantalla */
+    top: 0;           /* Coloca el contenedor en la parte superior */
+    left: 0;          /* Coloca el contenedor a la izquierda */
+    z-index: -1;      /* Hace que las partículas estén detrás del contenido */
+}
+
+/* Resto de los estilos que tengas en tu CSS */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+.contenedor {
+    font-family: 'Verdana', sans-serif;
+    color: blue;
+}
+
+.contenedor h2 {
+    font-size: 2rem;
+    /* Aquí, el color azul y la fuente son heredados de .contenedor */
+}
+
+.contenedor p {
+    /* Hereda tanto el color como la fuente del .contenedor */
+    font-size: 1rem;
+}
+/* Galería Destacada */
+#galeria-destacada {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #2c3e50; /* Fondo oscuro */
+    color: white; /* Color de texto blanco */
+}
+
+.titulo-seccion {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.descripcion-galeria {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.contenedor-flex {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.flex-item {
+    flex-basis: 30%;
+    box-sizing: border-box;
+    background-color: #cc1a1a; /* Fondo de los recuadros */
+    padding: 20px;
+    border-radius: 10px; /* Bordes redondeados */
+    transition: transform 0.3s ease-in-out; /* Animación al hacer hover */
+}
+
+.flex-item:hover {
+    transform: scale(1.05); /* Efecto hover para los recuadros */
+}
+
+.flex-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.flex-item p {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: rgb(255, 255, 255); /* Color de texto blanco */
+    margin-top: 50px;
+}
+/* Estilo para el título de "Experiencias Únicas" */
+.titulo-experiencias {
+    text-align: center;  /* Alineación centrada */
+    width: 100%;
+    margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+.titulo-experiencias h2 {
+    font-size: 2em; /* Tamaño de fuente */
+    color: white; /* Color blanco */
+    background-color: #007BFF; /* Fondo azul para resaltar */
+    padding: 10px 0; /* Espaciado alrededor del texto */
+    border-radius: 5px;
+}
+/* Contenedor del banner */
+.banner-container {
+    position: relative; /* Necesario para que los elementos dentro puedan moverse */
+    width: 1023px;      /* Mantén el ancho fijo del banner */
+    height: 682px;      /* Mantén la altura del banner */
+    overflow: hidden;   /* Esconde las imágenes que se desborden del contenedor */
+}
+
+/* Contenedor de las imágenes deslizando */
+.banner-slide {
+    display: flex;              /* Flexbox para alinear las imágenes horizontalmente */
+    position: absolute;         /* Permite mover las imágenes */
+    width: 300%;                /* Ancho suficiente para tres imágenes */
+    animation: slide 9s infinite; /* Animación para mover las imágenes */
+}
+
+/* Estilo de cada imagen */
+.banner-image {
+    width: 1023px;   /* Ancho de cada imagen */
+    height: 682px;   /* Altura de cada imagen */
+    object-fit: cover; /* Mantiene la proporción de la imagen */
+}
+
+/* Animación de desplazamiento de las imágenes */
+@keyframes slide {
+    0% {
+        transform: translateX(0); /
+    }
+    33.33% {
+        transform: translateX(-1023px); 
+    }
+    66.66% {
+        transform: translateX(-2046px); 
+    }
+    100% {
+        transform: translateX(0); 
+    }
+}
+body {
+    margin: 0; 
+    padding: 0; 
+    overflow-x: hidden; 
+}
+
+.banner-container {
+    width: 100%; 
+    overflow: hidden; 
+}
+
+.banner-slide {
+    display: flex; 
+    width: 300%; 
+    animation: slide 9s infinite; 
+}
+
+.banner-image {
+    width: 33.33%; 
+    object-fit: cover; 
+}
+
+/* Animación para el deslizamiento */
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    33.33% {
+        transform: translateX(-33.33%);
+    }
+    66.66% {
+        transform: translateX(-66.66%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Ajustes para dispositivos móviles */
+@media (max-width: 768px) {
+    .banner-container {
+        width: 100%; 
+    }
+
+    .banner-slide {
+        width: 300%; 
+    }
+
+    .banner-image {
+        width: 100%; 
+    }
+}
+body {
+    overflow-x: hidden; 
+}
+img {
+    max-width: 100%; 
+    height: auto;    
+}
+h1, h2, h3, h4, h5, h6 {
+    font-size: 1.2rem;
+}
+
+p, .content-text {
+    font-size: 1rem;
+}
+#main-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#main-nav a {
+    padding: 10px;
+    text-align: center;
+    display: block; 
+}
+
+/* Para pantallas más pequeñas */
+@media (max-width: 768px) {
+    #main-nav {
+        flex-direction: column;
+    }
+}
+/* Galería de imágenes o contenedores de columnas */
+.galeria-destacada, .contenedor-columnas {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Crea columnas flexibles */
+    gap: 20px;
+}
+
+/* Para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .galeria-destacada, .contenedor-columnas {
+        grid-template-columns: 1fr; 
+    }
+}
+/* Para pantallas pequeñas */
+@media (max-width: 600px) {
+    #main-header h1 {
+        font-size: 1.5rem;  
+    }
+
+    .banner-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .recuadro-interactivo {
+        padding: 15px;     
+    }
+
+    form input, form select, form button {
+        width: 100%;        
+        margin-bottom: 10px;
+    }
+}
+button {
+    padding: 15px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+@media (max-width: 600px) {
+    button {
+        width: 100%; 
+        font-size: 1.2rem;
+    }
+}
+/* Estilos para el apartado de Compra de Entradas */
+#entradas {
+    font-size: 1.2em;  /* Tamaño adecuado para el texto del contenedor */
+}
+
+#entradas h2 {
+    font-size: 2em;  /* Tamaño adecuado para el título */
+}
+
+#entradas p {
+    font-size: 1.3em;  /* Tamaño adecuado para el párrafo */
+}
+
+#entradas label,
+#entradas input,
+#entradas select {
+    font-size: 1.1em;  /* Tamaño adecuado para las etiquetas y campos */
+}
+
+#entradas button {
+    font-size: 1.3em;  /* Tamaño adecuado para el botón */
+}
+
